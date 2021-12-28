@@ -25,6 +25,10 @@ export const config: WebdriverIO.Config = {
     ],
 
     suites: {
+        
+        lesson0: [
+            './src/spec/e2e/home.ts'
+        ],
 
         lesson1: [
             './src/spec/e2e/input.ts',
@@ -52,7 +56,8 @@ export const config: WebdriverIO.Config = {
 
         lesson7: [
             './src/spec/e2e/move.ts'
-        ]
+        ],
+
     },
     // Patterns to exclude.
     exclude: [

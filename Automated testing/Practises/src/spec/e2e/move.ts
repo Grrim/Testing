@@ -1,9 +1,9 @@
 import { homeUrl } from './../../lib/pages'
+import homePage from "./../../pages/homePage"
 
 describe("Move into view", async() => {
     it("Should open automation practice page and verify url", async() => {
-        await browser.url(homeUrl);
-        expect(browser).toHaveUrl(homeUrl + "index.php");
+        await homePage.openHomePage();
     })
 
     it("Should scroll into view facebook icon", async() => {

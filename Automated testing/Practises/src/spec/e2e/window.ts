@@ -1,9 +1,9 @@
 import { homeUrl, womenUrl } from './../../lib/pages'
+import homePage from './../../pages/homePage'
 
 describe("Window", async() => {
     it("Should open home page", async() => {
-        await browser.url(homeUrl);
-        expect(browser).toHaveUrl(homeUrl + "index.php");
+        await homePage.openHomePage();
     })
 
     it("Should open women page in new window", async() => {

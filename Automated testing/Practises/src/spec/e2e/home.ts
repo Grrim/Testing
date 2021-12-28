@@ -1,6 +1,12 @@
+import homePage from './../../pages/homePage'
+
 describe("Verify Home Page", async () => {
-    it("Should open home page and wait 3000 ms", async () => {
-        await browser.url("http://127.0.0.1:8000/home");
+    it("Should open home page", async () => {
+        await homePage.openHomePage();
+    })
+
+    it("Should move to facebook icon", async() => {
+        await homePage.moveToFbIcon();
         await browser.pause(3000);
     })
 })

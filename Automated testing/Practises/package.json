@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "e2e": "wdio wdio.conf.ts",
+    "lesson0": "wdio wdio.conf.ts --suite lesson0",
     "lesson1": "wdio wdio.conf.ts --suite lesson1",
     "lesson2": "wdio wdio.conf.ts --suite lesson2",
     "lesson3": "wdio wdio.conf.ts --suite lesson3",

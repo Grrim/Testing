@@ -1,9 +1,9 @@
 import { homeUrl, womenUrl } from "./../../lib/pages"
+import homePage from './../../pages/homePage'
 
 describe("Checkbox", async() => {
     it("Should open automationpractise page", async() => {
-        await browser.url(homeUrl);
-        expect(browser).toHaveUrl(homeUrl + "index.php");
+        await homePage.openHomePage();
     })
 
     it("Should click on women page and verify", async() => {

@@ -1,22 +1,17 @@
-import { homeUrl } from "../../lib/pages"
-import { searchPhrase, homePageTitle } from "../../lib/wordData"
+import { homePageTitle } from "../../lib/wordData"
+import homePage from './../../pages/homePage'
 
 describe("Input", async() => {
     it("Should open automationpractise page", async() => {
-        await browser.url(homeUrl);
-        expect(browser).toHaveUrl(homeUrl + "index.php");
+        await homePage.openHomePage();
         expect(browser).toHaveTitle(homePageTitle);
     })
 
     it("Should type value to search input", async() =>{
-        const input:WebdriverIO.Element = await $("#search_query_top");
-        await input.setValue(searchPhrase);
-        expect(await input.getValue()).toContain(searchPhrase);
+        await homePage.typeValueToInput("Sukienka niebieska");
     })
 
     it("Should clear search input", async() => {
-        const input:WebdriverIO.Element = await $("#search_query_top");
-        await input.clearValue();
-        expect(await input.getValue()).toContain("");
+        await homePage.clearValueInInput();
     })
 })
