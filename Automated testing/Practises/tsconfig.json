@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "types": [
+            "node",
+            "webdriverio/async",
+            "@wdio/mocha-framework",
+            "expect-webdriverio"
+        ],
+        "allowJs": true,
+        "target": "ES5"
+    },
+    "include": [
+        "./src/spec/**/*.ts",
+        "./wdio.conf.ts"
+    ]
+}
