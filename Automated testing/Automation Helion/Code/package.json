@@ -1,0 +1,31 @@
+{
+  "name": "automation-helion",
+  "version": "1.0.0",
+  "description": "Automation framework for Helion page",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "wdio wdio.conf.ts --suite e2e",
+    "debug": "wdio wdio.conf.ts --suite debug"
+  },
+  "keywords": [
+    "automation",
+    "helion",
+    "typescript"
+  ],
+  "author": "Grim",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "@wdio/cli": "^7.16.12",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.16.12",
+    "@wdio/mocha-framework": "^7.16.11",
+    "@wdio/spec-reporter": "^7.16.11",
+    "chromedriver": "^96.0.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4",
+    "wdio-chromedriver-service": "^7.2.2"
+  }
+}
