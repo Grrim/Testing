@@ -29,7 +29,7 @@ describe("e2e - category", async() => {
         await categoryPage.clickOnSpecializationCategory();
         expect(browser).toHaveUrl(specializationUrl);
         expect(await categoryPage.getOtherAnnouncementTitle()).toContain(otherAnnouncementsTitle);
-        expect(await categoryPage.getNumberOfAnnoncements()).toEqual(20);
+        expect(await categoryPage.getNumberOfAnnoncements()).toEqual(39);
     })
 
     it("Should click on fourth announcement under the heading other announcements", async() => {

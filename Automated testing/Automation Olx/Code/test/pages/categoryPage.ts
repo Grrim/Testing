@@ -4,7 +4,7 @@ class categoryPage {
     }
 
     get chooseSpecialization(){
-        return $("a.tdnone.block.c27.brbott-4.category-choose.category_choose1717");
+        return $("a.tdnone.block.c27.brbott-4.category-choose.category_choose1716");
     }
 
     get announcementList(){
@@ -66,6 +66,7 @@ class categoryPage {
 
     async getOtherAnnouncementTitle():Promise<string>{
         const title:WebdriverIO.Element = await this.otherAnnouncementsTitle;
+        await title.scrollIntoView();
         await title.waitForDisplayed();
         return await title.getText();
     }

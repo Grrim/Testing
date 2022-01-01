@@ -46,6 +46,7 @@ class announcementPage {
     async clickOnAddToFollowedIcon(){
         const icon:WebdriverIO.Element = await this.addToOfollowed;
         await icon.waitForDisplayed();
+        await icon.scrollIntoView();
         await icon.click();
     }
 }
