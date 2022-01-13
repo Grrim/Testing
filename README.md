@@ -1,3 +1,3 @@
 # Testing
 
-Automated testing using WebDriverIO
+Automated testing using WebDriverIO and Selenium
